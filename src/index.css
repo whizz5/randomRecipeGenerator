@@ -5,9 +5,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: rgb(231, 228, 221); */
+  /* background-color: rgb(219, 159, 17); */
+  background: linear-gradient(to left, #ebcdaa 50%, #eb9b40 50%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.recipePic{
+  height:100% !important;
+ object-fit: cover;
+}
+
+.funkyCorners{
+  border-radius: 15px 100px;
+  overflow: hidden
+}
+
+p > a{
+  color: #eb9b40;
+}
+

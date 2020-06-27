@@ -13,7 +13,8 @@
     "react-bootstrap-icons": "^1.0.3-alpha4",
     "react-dom": "^16.13.1",
     "react-html-parser": "^2.0.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "string-strip-html": "^4.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
