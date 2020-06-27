@@ -3,7 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import RecipeOverview from "./Components/RecipeOverview/RecipeOverview";
 import RecipeInstructions from "./Components/RecipeInstructions/recipeInstructions";
 import axios from "axios";
-import Navbar from "react-bootstrap/Navbar";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from 'react-loader-spinner'
+
 
 class App extends React.Component {
   state = {
@@ -71,7 +73,13 @@ class App extends React.Component {
             <RecipeInstructions  clicked={this.clickHandler} recipeInfo={this.state.recipe} />
           )
         ) : (
-          <h1>LOADING</h1>
+          <Loader
+          type="ThreeDots"
+          color="#FFFF"
+          height={750}
+          width={750}
+          timeout={3000} //3 secs
+          />
         )}
      
       </div>
