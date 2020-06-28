@@ -15,9 +15,32 @@ class App extends React.Component {
     
   };
 
+
  
   
   componentDidMount() {
+
+const today = new Date();
+const currentTime = today.getHours()
+let meal = "";
+
+if (currentTime >= 6 && currentTime < 12){
+  meal = "breakfast"
+  console.log('meal: ', meal);
+}
+else if (currentTime >= 12 && currentTime < 18){
+  meal = "lunch"
+  console.log('meal: ', meal);
+}
+else if (currentTime >= 18 && currentTime <= 23){
+  meal = "dinner"
+  console.log('meal: ', meal);
+}
+else{
+  meal="Snack"
+  console.log('meal: ', meal);
+}
+
     axios({
       method: "GET",
       url:
@@ -31,7 +54,7 @@ class App extends React.Component {
       },
       params: {
         number: "1",
-        tags: "dinner",
+        tags: meal,
       },
     })
       .then((response) => {

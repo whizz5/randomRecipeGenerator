@@ -19,7 +19,7 @@ const recipeInstructions = (props) => {
           <h2 className="m-2 text-center text-warning">Method</h2>
           <p>{stripHtml(props.recipeInfo.instructions)}</p>
           <Row className="justify-content-center mb-3">
-          <Button onClick={props.clicked} className=" btn-warning text-light"> Overview </Button>
+          <Button onClick={props.clicked} className="btn-warning text-light"> Overview </Button>
         </Row>
         </Col>
   
